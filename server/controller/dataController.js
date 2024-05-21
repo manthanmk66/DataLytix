@@ -1,3 +1,5 @@
+const Data = require("../model/data");
+
 exports.getData = async (req, res) => {
   try {
     const data = await Data.find();

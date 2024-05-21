@@ -3,6 +3,7 @@ const express = require("express");
 const cors = require("cors");
 const { dbconnect } = require("./config/database");
 const app = express();
+const dataRoutes = require("../server/routes/route");
 require("../server/config/database");
 
 require("dotenv").config();
@@ -18,6 +19,8 @@ app.use(
     origin: "*",
   })
 );
+
+app.use("/", dataRoutes);
 
 app.listen(PORT, () => {
   console.log(`Server is Running on Port- ${PORT}`);

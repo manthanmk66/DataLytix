@@ -22,7 +22,9 @@ const D3Component = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get("http://localhost:4000/data");
+        const response = await axios.get(
+          `${process.env.REACT_APP_BASE_URL}/data`
+        );
         setData(response.data);
         setFilteredData(response.data);
         setLoading(false);

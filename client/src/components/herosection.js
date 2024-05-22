@@ -26,6 +26,7 @@ const D3Component = () => {
           `${process.env.REACT_APP_BASE_URL}/data`
         );
         setData(response.data);
+        console.log("Data fetched");
         setFilteredData(response.data);
         setLoading(false);
       } catch (error) {

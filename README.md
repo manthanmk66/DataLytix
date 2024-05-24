@@ -1,3 +1,5 @@
+## Link - https://data-lytix.vercel.app/
+
 # Visualization Dashboard
 
 ## Overview
@@ -50,5 +52,5 @@ View Visualization: The bar chart will update dynamically based on the applied f
 
 ### Clone the repository
 ```sh
-git clone https://github.com/your-username/visualization-dashboard.git
-cd visualization-dashboard
+git clone https://github.com/manthanmk66/DataLytix.git
+cd DataLytix

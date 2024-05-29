@@ -35,12 +35,6 @@ const D3Component = () => {
     };
 
     fetchData();
-    const timer = setTimeout(() => {
-      setLoading(false);
-    }, 5000); // 2 seconds timeout
-
-    // Clear the timeout if the component is unmounted
-    return () => clearTimeout(timer);
   }, []);
 
   useEffect(() => {
